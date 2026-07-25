@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pr.haider.rev</title>
+    
+    <!-- مكتبة الأيقونات الشهيرة Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="public/style.css">
+</head>
+<body>
+
+<div class="container">
+    <nav>
+  
+        <!-- ICONS NAV -->
+        <div class="topbar">
+
+            <!-- اليمين -->
+            <div class="top-right">
+                <span class="dev-name">H A I D E R - A Y</span>
+            </div>
+        
+            <!-- الوسط -->
+            <div class="top-center">
+                <div class="lang-icons">
+                    <i class="fa-solid fa-code" title="C#"></i>
+                    <i class="fa-solid fa-laptop-code" title="VB"></i>
+                    <i class="fa-brands fa-python" title="Python"></i>
+                    <i class="fa-brands fa-html5" title="HTML"></i>
+                </div>
+            </div>
+        
+            <!-- اليسار -->
+            <div class="top-left">
+                <a href="https://haiayaall98.lovestoblog.com" class="top-btn">
+                    <i class="fa-solid fa-house"></i>
+                </a>
+            
+                <span class="home-text">الواجهة الرئيسية</span>
+            </div>
+        
+        </div>
+        <!-- VISITS + CV -->
+      
+  
+      </nav>
+    <h1><i class="fa-solid fa-wand-magic-sparkles"></i> ممحاة الخلفية الذكية</h1>
+    <p>ارفع صورتك الآن ودع السيرفر يفصل الخلفية عنها بثوانٍ بكل احترافية.</p>
+    
+    <label class="upload-btn">
+        <i class="fa-solid fa-cloud-arrow-up"></i> اختر صورة من جهازك
+        <input type="file" id="imageInput" accept="image/*">
+    </label>
+
+    <div class="loading" id="loadingText">
+        <i class="fa-solid fa-circle-notch"></i> جاري معالجة الصورة الذكية بدقة...
+    </div>
+
+    <div class="preview-box">
+        <div id="originalContainer" class="preview-col" style="display:none;">
+            <h3><i class="fa-solid fa-image"></i> الصورة الأصلية</h3>
+            <img id="originalImage" src="" alt="الأصلية">
+        </div>
+        <div id="resultContainer" class="preview-col" style="display:none;">
+            <h3><i class="fa-solid fa-file-image"></i> النتيجة الشفافة</h3>
+            <img id="resultImage" src="" alt="النتيجة">
+            <a id="downloadBtn" class="download-btn" download="no-bg.png">
+                <i class="fa-solid fa-download"></i> تحميل الصورة
+            </a>
+        </div>
+    </div>
+</div>
+<div id="successToast" class="success-toast">
+    <i class="fa-solid fa-circle-check"></i>
+    <span>تم تحميل الصورة بنجاح</span>
+</div>
+<script src="public/script.js"></script>
+
+</body>
+</html>
